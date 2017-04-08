@@ -1,24 +1,7 @@
 package algo
 
-import (
-	"fmt"
-)
-
-func main() {
-	arr := []int{1, 2, 5, 3, 4, 2, 8, 6}
-	bubbleSort1(arr)
-	fmt.Println(arr)
-
-	arr = []int{1, 2, 5, 3, 4, 2, 8, 6}
-	bubbleSort2(arr)
-	fmt.Println(arr)
-
-	arr = []int{1, 2, 5, 3, 4, 2, 8, 6}
-	bubbleSort3(arr)
-	fmt.Println(arr)
-}
-
-func bubbleSort1(arr []int) {
+// BubbleSort1 bubble sort impletation 1
+func BubbleSort1(arr []int) {
 	for i := 0; i < len(arr); i++ {
 		for j := i + 1; j < len(arr)-i; j++ {
 			if arr[j] < arr[j-1] {
@@ -28,7 +11,8 @@ func bubbleSort1(arr []int) {
 	}
 }
 
-func bubbleSort2(arr []int) {
+// BubbleSort2 bubble sort impletation 2
+func BubbleSort2(arr []int) {
 	swap := true
 	i := 0
 	for swap {
@@ -43,6 +27,7 @@ func bubbleSort2(arr []int) {
 	}
 }
 
+// BubbleSort3 bubble sort impletation 3
 func bubbleSort3(arr []int) {
 	i, k := 0, len(arr)
 	flag := k

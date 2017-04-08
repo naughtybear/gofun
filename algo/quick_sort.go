@@ -1,12 +1,7 @@
 package algo
 
-// func main() {
-// 	arr := []int{1, 2, 5, 3, 4, 2, 8, 6}
-// 	quickSort(arr, 0, len(arr)-1)
-// 	fmt.Println(arr)
-// }
-
-func quickSort(arr []int, left, right int) {
+// QuickSort quick sort
+func QuickSort(arr []int, left, right int) {
 	if left < right {
 		k := arr[left]
 		i, j := left, right
@@ -28,7 +23,7 @@ func quickSort(arr []int, left, right int) {
 			}
 		}
 		arr[i] = k
-		quickSort(arr, left, i-1)
-		quickSort(arr, i+1, right)
+		QuickSort(arr, left, i-1)
+		QuickSort(arr, i+1, right)
 	}
 }

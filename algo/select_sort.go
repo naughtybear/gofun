@@ -1,11 +1,5 @@
 package algo
 
-// func main() {
-// 	arr := []int{1, 2, 5, 3, 4, 2, 8, 6}
-// 	selectSort(arr)
-// 	fmt.Println(arr)
-// }
-
 func selectSort(arr []int) {
 	for i := 0; i < len(arr)-1; i++ {
 		nMinIdx := i
