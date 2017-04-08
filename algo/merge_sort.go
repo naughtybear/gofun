@@ -1,22 +1,6 @@
 package algo
 
-// func main() {
-// 	arr := []int{1, 2, 5, 3, 4, 2, 8, 6}
-// 	MergeSort(arr, 0, len(arr)-1)
-// 	fmt.Println(arr)
-
-// 	arr1 := []int{1, 2, 3, 2, 3, 4}
-// 	Merge(arr1, 0, 2, 5)
-// 	fmt.Println(arr1)
-
-// 	fmt.Println(5 / 2) // 向下取整
-
-// 	fmt.Println(arr)
-// }
-
-/*
-MergeSort this is a implemention
-*/
+// MergeSort this is a implemention
 func MergeSort(arr []int, first, last int) {
 	if first < last {
 		mid := (first + last) / 2
@@ -26,9 +10,7 @@ func MergeSort(arr []int, first, last int) {
 	}
 }
 
-/*
-Merge 合并两列已排序的数组
-*/
+// Merge 合并两列已排序的数组
 func Merge(arr []int, first, mid, last int) {
 	tmp := make([]int, last-first+1)
 	i, j := first, mid+1
