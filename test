@@ -1,0 +1,19 @@
+	<mirror>  
+        <id>mvn</id>  
+        <mirrorOf>mvnrepository</mirrorOf>  
+        <url>http://mvnrepository.com/</url>  
+    </mirror>
+	
+	<mirror>
+      <id>wso2maven</id>
+      <name>wso2 maven</name>
+	  <mirrorOf>*</mirrorOf>
+      <url>http://maven.wso2.org/nexus/content/groups/public/</url>
+    </mirror>
+	
+	<mirror>
+      <id>alimaven</id>
+      <name>aliyun maven</name>
+	  <mirrorOf>*</mirrorOf>
+      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+    </mirror>
